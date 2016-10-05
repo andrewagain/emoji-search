@@ -1,18 +1,24 @@
 import React from 'react';
 
-class EmojiResultRow extends React.Component {
+class EmojiResultsRow extends React.Component {
   render() {
+    const codePointHex = this.props.symbol.codePointAt(0).toString(16);
+    const src = `//cdn.jsdelivr.net/emojione/assets/png/${codePointHex}.png`;
     return (
       <div>
         <img
-          alt="Grinning"
-          src="//cdn.jsdelivr.net/emojione/assets/png/1f600.png"
+          alt={this.props.title}
+          src={src}
         />
         <span>
-          Grinning
+          {this.props.title}
         </span>
       </div>
     );
   }
 }
-export default EmojiResultRow;
+EmojiResultsRow.propTypes = {
+  title: React.PropTypes.string,
+  symbol: React.PropTypes.string,
+};
+export default EmojiResultsRow;
