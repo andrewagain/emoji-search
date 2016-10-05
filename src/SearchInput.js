@@ -1,8 +1,8 @@
 import React from 'react';
 
 class SearchInput extends React.Component {
-  handleChange = () => {
-    console.log('You changed the search input.');
+  handleChange = (event) => {
+    this.props.textChange(event);
   }
 
   render() {
@@ -15,4 +15,7 @@ class SearchInput extends React.Component {
     );
   }
 }
+SearchInput.propTypes = {
+  textChange: React.PropTypes.func,
+};
 export default SearchInput;

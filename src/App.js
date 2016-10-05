@@ -4,11 +4,17 @@ import SearchInput from './SearchInput';
 import EmojiResults from './EmojiResults';
 
 class App extends React.Component {
+  handleSearchChange = (event) => {
+    console.log('search input changed to:', event.target.value);
+  }
+
   render() {
     return (
       <div>
         <Header/>
-        <SearchInput/>
+        <SearchInput
+          textChange={this.handleSearchChange}
+        />
         <EmojiResults
           emojiData={[
             {
