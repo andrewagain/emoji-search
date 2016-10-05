@@ -9,7 +9,22 @@ class App extends React.Component {
       <div>
         <Header/>
         <SearchInput/>
-        <EmojiResults/>
+        <EmojiResults
+          emojiData={[
+            {
+              title: 'Fire',
+              symbol: '🔥',
+            },
+            {
+              title: 'Grinning',
+              symbol: '😀',
+            },
+            {
+              title: 'Smile Cat',
+              symbol: '😺',
+            }
+          ]}
+        />
       </div>
     );
   }

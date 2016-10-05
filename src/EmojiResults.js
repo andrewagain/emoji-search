@@ -5,9 +5,22 @@ class EmojiResults extends React.Component {
   render() {
     return (
       <div>
-        <EmojiResultRow title="Grinning" symbol="😀"/>
+        {
+          this.props.emojiData.map((emojiData) => {
+            return (
+              <EmojiResultRow
+                key={emojiData.symbol}
+                symbol={emojiData.symbol}
+                title={emojiData.title}
+              />
+            );
+          })
+        }
       </div>
     );
   }
 }
+EmojiResults.propTypes = {
+  emojiData: React.PropTypes.array,
+};
 export default EmojiResults;
