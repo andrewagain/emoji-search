@@ -1,5 +1,6 @@
 import React from 'react';
 import EmojiResultRow from './EmojiResultRow';
+import './EmojiResults.css';
 
 class EmojiResults extends React.Component {
   render() {
