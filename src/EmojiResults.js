@@ -4,7 +4,7 @@ import EmojiResultRow from './EmojiResultRow';
 class EmojiResults extends React.Component {
   render() {
     return (
-      <div>
+      <div className="component-emoji-results">
         {
           this.props.emojiData.map((emojiData) => {
             return (
