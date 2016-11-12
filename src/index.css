@@ -3,3 +3,13 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+body .github-fork-ribbon:before {
+  background-color: #333;
+}
+
+@media screen and (max-width: 500px) {
+  .github-fork-ribbon {
+    display: none;
+  }
+}
