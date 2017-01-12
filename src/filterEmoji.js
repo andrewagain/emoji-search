@@ -2,7 +2,7 @@ import emojiList from './emojiList.json';
 
 export default function filterEmoji(searchText, maxResults) {
   return emojiList.filter((emoji) => {
-    if (emoji.title.includes(searchText)) {
+    if (emoji.title.toLowerCase().includes(searchText.toLowerCase())) {
       return true;
     }
     if (emoji.keywords.includes(searchText)) {
