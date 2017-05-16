@@ -9,8 +9,9 @@
   },
   "dependencies": {
     "github-fork-ribbon-css": "^0.2.1",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
