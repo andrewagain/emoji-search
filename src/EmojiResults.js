@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import EmojiResultRow from './EmojiResultRow';
 import './EmojiResults.css';
 
@@ -22,6 +24,6 @@ class EmojiResults extends React.Component {
   }
 }
 EmojiResults.propTypes = {
-  emojiData: React.PropTypes.array,
+  emojiData: PropTypes.array,
 };
 export default EmojiResults;
