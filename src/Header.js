@@ -10,6 +10,7 @@ class Header extends React.Component {
           role="presentation"
           width="32"
           height="32"
+          alt=""
         />
         Emoji Search
         <img
@@ -17,6 +18,7 @@ class Header extends React.Component {
           role="presentation"
           width="32"
           height="32"
+          alt=""
         />
       </header>
     );
