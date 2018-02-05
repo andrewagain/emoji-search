@@ -12,7 +12,7 @@ class EmojiResults extends React.Component {
           this.props.emojiData.map((emojiData) => {
             return (
               <EmojiResultRow
-                key={emojiData.symbol}
+                key={emojiData.title}
                 symbol={emojiData.symbol}
                 title={emojiData.title}
               />
