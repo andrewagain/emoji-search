@@ -7,7 +7,6 @@ class Header extends React.Component {
       <header className="component-header">
         <img
           src="//cdn.jsdelivr.net/emojione/assets/png/1f638.png"
-          role="presentation"
           width="32"
           height="32"
           alt=""
@@ -15,7 +14,6 @@ class Header extends React.Component {
         Emoji Search
         <img
           src="//cdn.jsdelivr.net/emojione/assets/png/1f63a.png"
-          role="presentation"
           width="32"
           height="32"
           alt=""
