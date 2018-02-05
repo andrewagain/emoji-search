@@ -8,17 +8,13 @@ class EmojiResults extends React.Component {
   render() {
     return (
       <div className="component-emoji-results">
-        {
-          this.props.emojiData.map((emojiData) => {
-            return (
+        {this.props.emojiData.map((emojiData, index) =>
               <EmojiResultRow
-                key={emojiData.symbol}
+                key={index}
                 symbol={emojiData.symbol}
                 title={emojiData.title}
               />
-            );
-          })
-        }
+          )}
       </div>
     );
   }
