@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 
 import EmojiResultRow from './EmojiResultRow';
 import './EmojiResults.css';
 
-class EmojiResults extends React.Component {
+class EmojiResults extends PureComponent {
   render() {
     return (
       <div className="component-emoji-results">
