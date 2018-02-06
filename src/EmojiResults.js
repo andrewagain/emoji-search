@@ -8,9 +8,9 @@ class EmojiResults extends PureComponent {
   render() {
     return (
       <div className="component-emoji-results">
-        {this.props.emojiData.map((emojiData, index) =>
+        {this.props.emojiData.map((emojiData) =>
               <EmojiResultRow
-                key={index}
+                key={emojiData.title}
                 symbol={emojiData.symbol}
                 title={emojiData.title}
               />
