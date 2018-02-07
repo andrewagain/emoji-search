@@ -21,3 +21,16 @@
   position: relative;
   top: -8px;
 }
+
+.component-emoji-result-row .info {
+  float: right;
+  position: relative;
+  top: 8px;
+  right: 10px;
+  color: #ccc;
+  display: none;
+}
+
+.component-emoji-result-row:hover .info {
+  display: inline-block;
+}
