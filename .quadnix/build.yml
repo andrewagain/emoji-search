@@ -1,0 +1,21 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - yarn build --production
+  post_build:
+    commands:
+      - cp -R .quadnix build/
+      - cd build; mkdir emoji-search; mv static emoji-search/;
+      - mv build/.quadnix/.htaccess build/
+
+run:
+  react:
+    httpd:
+      enabled: true
+
+dist: build
