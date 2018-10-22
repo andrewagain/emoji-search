@@ -1,5 +1,5 @@
 # Extending image
-FROM node
+FROM node:carbon
 
 # Versions
 RUN npm -v
