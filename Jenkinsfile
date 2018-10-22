@@ -10,7 +10,7 @@ node {
       sh 'printenv'
     }
     stage('Build Docker test'){
-     sh 'docker build -t react-app-pipeline -f Dockerfile.test --no-cache .'
+     sh 'docker build -t react-app-pipeline -f Dockerfile --no-cache .'
     }
     stage('Docker test'){
       sh 'docker run --rm react-app-pipeline'
