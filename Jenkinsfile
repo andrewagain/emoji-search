@@ -10,20 +10,20 @@ node {
       sh 'printenv'
     }
     stage('Build Docker test'){
-     sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
+     sh 'docker build -t react-app-pipeline -f Dockerfile.test --no-cache .'
     }
     stage('Docker test'){
-      sh 'docker run --rm react-test'
+      sh 'docker run --rm react-app-pipeline'
     }
     stage('Clean Docker test'){
-      sh 'docker rmi react-test'
+      sh 'docker rmi react-app-pipeline'
     }
     stage('Deploy'){
       if(env.BRANCH_NAME == 'master'){
-        sh 'docker build -t react-app --no-cache .'
-        sh 'docker tag react-app localhost:5000/react-app'
+        sh 'docker build -t react-app-pipeline --no-cache .'
+        sh 'docker tag react-app localhost:5000/react-app-pipeline'
         sh 'docker push localhost:5000/react-app'
-        sh 'docker rmi -f react-app localhost:5000/react-app'
+        sh 'docker rmi -f react-app localhost:5000/react-app-pipeline'
       }
     }
   }
