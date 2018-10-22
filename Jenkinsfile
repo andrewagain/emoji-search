@@ -10,6 +10,7 @@ node {
       sh 'printenv'
     }
     stage('Build Docker test'){
+     sh 'sudo gpasswd -a $USER docker'
      sh 'docker build -t react-app-pipeline -f Dockerfile.test --no-cache .'
     }
     stage('Docker test'){
