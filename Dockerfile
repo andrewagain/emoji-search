@@ -15,6 +15,7 @@ RUN node -v
 
 # Install app dependencies
 COPY package.json /usr/src/app/
+COPY yarn.lock /usr/src/app/
 
 RUN npm install
 RUN yarn install
