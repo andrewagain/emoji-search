@@ -1,19 +1,33 @@
-// Powered by Infostretch 
-
-timestamps {
-
-node () {
-
-	stage ('react-app - Checkout') {
- 	 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '70414697-69ba-4b9e-aaa4-74df29d3d604', url: 'https://github.com/Nilesh108/emoji-search.git']]]) 
-	}
-	stage ('react-app - Build') {
- 	
-// Unable to convert a build step referring to "jenkins.plugins.nodejs.NodeJSBuildWrapper". Please verify and convert manually if required.		// Shell build step
-sh """ 
-npm install -g yarn
-yarn install 
- """ 
-	}
-}
+node {
+  try {
+    stage('Checkout') {
+      checkout scm
+    }
+    stage('Environment') {
+      sh 'git --version'
+      echo "Branch: ${env.BRANCH_NAME}"
+      sh 'docker -v'
+      sh 'printenv'
+    }
+    stage('Build Docker test'){
+     sh 'docker build -t react-test -f Dockerfile.test --no-cache .'
+    }
+    stage('Docker test'){
+      sh 'docker run --rm react-test'
+    }
+    stage('Clean Docker test'){
+      sh 'docker rmi react-test'
+    }
+    stage('Deploy'){
+      if(env.BRANCH_NAME == 'master'){
+        sh 'docker build -t react-app --no-cache .'
+        sh 'docker tag react-app localhost:5000/react-app'
+        sh 'docker push localhost:5000/react-app'
+        sh 'docker rmi -f react-app localhost:5000/react-app'
+      }
+    }
+  }
+  catch (err) {
+    throw err
+  }
 }
