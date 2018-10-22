@@ -1,5 +1,5 @@
 # Extending image
-FROM node
+FROM node:carbon
 
 RUN apt-get update
 RUN apt-get upgrade -y
