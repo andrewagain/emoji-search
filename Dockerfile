@@ -17,6 +17,7 @@ RUN node -v
 COPY package.json /usr/src/app/
 
 RUN npm install
+RUN yarn install
 
 # Bundle app source
 COPY . /usr/src/app
@@ -30,6 +31,7 @@ ENV PORT 3000
 ENV PUBLIC_PATH "/"
 
 RUN npm run start:build
+RUN yarn run build
 
 # Main command
 CMD [ "npm", "run", "start:server" ]
