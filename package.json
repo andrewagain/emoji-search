@@ -12,10 +12,11 @@
     "clipboard": "^1.7.1",
     "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.2.0",
+    "forever": "^0.15.3"
     "react-dom": "^16.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "forever start react-scripts",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
