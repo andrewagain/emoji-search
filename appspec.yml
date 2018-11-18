@@ -3,3 +3,9 @@ os: linux
 files:
   - source: /
     destination: /home/ec2-user/emoji-search
+hooks:
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/start_app.sh      
