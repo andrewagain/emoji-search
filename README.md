@@ -61,24 +61,30 @@ $ sudo ./cicdtools_install.sh
 
 
 
-# Screens for configuring Jenkins CI/CD project
+## Screens for configuring Jenkins CI/CD project
 
 
 Refer to the screens in folder jenkins_cicd_setup_screens to configure your project in Jenkins
 
 
 
-# How it works
+## How it works
 
-Once you push the changes on GitHub repo, The web hook will be invoked and it will post back the build to your Jenkins
-Build release will be deployed when any changes in code are pushed to Git Hub   
-Used AWS CodeDeploy plugin in Jenkins for connecting to AWS CodeDeploy Application.
-Used S3 Bucket details in Jenkins for connecting to AWS S3 and storing release builds in zip format there.
-Once the release build is deployed at S3 Bucket directory, AWS CodeDeploy service deploys the application to Ec2 instance and executes scripts for after install and application start configuration from appspec.yml file 
+-> Once you push the changes on GitHub repo, The web hook will be invoked and it will post back the to your Jenkins for creating a build
+
+-> I have setup Jenkins on local machine so for using webhooks, I have used ngrok to map domain to localhost
+
+-> Build release will be deployed when any changes in code are pushed to Git Hub   
+
+-> Used AWS CodeDeploy plugin in Jenkins for connecting to AWS CodeDeploy Application.
+
+-> Used S3 Bucket details in Jenkins for connecting to AWS S3 and storing release builds in zip format there.
+
+-> Once the release build is deployed at S3 Bucket directory, AWS CodeDeploy service deploys the application to Ec2 instance and executes scripts for after install and application start configuration from appspec.yml file 
 
 
 
-# If I hade more time i would love to do below things
+## If I hade more time i would love to do below things
 
 Containerization with dockers
 
@@ -91,7 +97,7 @@ Setting up tools for capturing logs
 Monitoring the deployment activities
 
 
-# Note
+## Note
 
 As localhost is not accessible by GitHub for its Web Hooks, If you are setting up Jenkins on your local machine you can use ngrok for generating a host which will be accesible from GitHub Web Hooks. 
 
