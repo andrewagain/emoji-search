@@ -1,0 +1,40 @@
+{
+    "variables": {
+      "name": "centos_7_jenkins",
+      "source_ami": "ami-28e07e50",
+      "access_key":"ABC",
+      "secret_key":"XYZ",
+      "region":"us-west-2"
+    },
+    "builders": [{
+      "type": "amazon-ebs",
+      "access_key": "{{user `access_key`}}",
+      "secret_key":"{{user `secret_key`}}",
+      "ami_name": "{{user `name`}}",
+      "region": "{{user `region`}}",
+      "source_ami": "{{user `source_ami`}}",
+      "instance_type": "t2.micro",
+      "communicator": "ssh",
+      "ssh_username": "ec2-user",
+      "run_tags":{"Name":"Jenkins-image"}
+    }],
+    "provisioners": [
+        {
+            "type": "shell",
+            "inline": "sudo yum -y update && sudo yum -y remove java-1.7.0-openjdk"
+        },
+        {
+            "type": "shell",
+            "inline": [
+               "sudo yum -y install java-1.8.0",
+               "sudo yum -y install yum-utils git",
+               "sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo",
+               "sudo rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key",
+               "sudo yum -y install jenkins",
+               "sudo service jenkins start",
+               "sudo chkconfig --add jenkins",
+               "sudo curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash - && sudo yum install nodejs npm" 
+]
+}
+]
+}
