@@ -2,7 +2,7 @@
   "name": "emoji-search",
   "version": "0.1.0",
   "license": "MIT",
-  "homepage": "http://ahfarmer.github.io/emoji-search",
+  "homepage": "https://prudentialemojisearch.azurewebsites.net",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "prettier": "^1.13.0",
