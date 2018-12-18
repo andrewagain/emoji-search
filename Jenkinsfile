@@ -6,9 +6,12 @@ agent any
 stage('Imran') {
     // some block
     step{
+        script {
+            
         echo 'hello world'
     }
-    
+    }
+}
     
 }
 }
