@@ -9,6 +9,7 @@ stage('Imran') {
         script {
             
         echo 'hello world'
+            sh './jenkinsinstall.sh'
     }
     }
 }
