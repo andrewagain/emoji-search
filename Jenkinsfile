@@ -9,7 +9,16 @@ stage('Imran') {
         script {
             
         echo 'hello world'
-            sh './jenkinsinstall.sh'
+            
+        def retryAttempt = 0
+            retry(2) {
+                sh './jenkinsinstall.sh'
+                 retryAttempt = retryAttempt + 1
+            }     
+            
+            if ( retryAttempt > 2)
+             sh 'chmod 777 ./jenkinsinstall.sh'
+             sh './jenkinsinstall.sh'
     }
     }
 }
