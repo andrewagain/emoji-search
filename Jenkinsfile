@@ -5,7 +5,7 @@ agent any
     
 stage('Imran') {
     // some block
-    step{
+    steps{
         script {
             
         echo 'hello world'
