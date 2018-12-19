@@ -12,9 +12,9 @@ DEST=$2
 #CHANGELOG=$TMP_DIR/CHANGELOG.md
 CHANGELOG=CHANGELOG.md
 
-if [ ! -d "$TMP_DIR" ]; then
-    mkdir $TMP_DIR
-fi
+#if [ ! -d "$TMP_DIR" ]; then
+ #   mkdir $TMP_DIR
+#fi
 
 # Make sure we have the branches and the latest code from them.
 git checkout ${SRC} || die "Cant checkout ${SRC}"
