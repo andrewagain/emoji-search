@@ -8,8 +8,9 @@ die () {
 SRC=$1
 DEST=$2
 
-TMP_DIR=~/temp
-CHANGELOG=$TMP_DIR/CHANGELOG.md
+#TMP_DIR=~/temp
+#CHANGELOG=$TMP_DIR/CHANGELOG.md
+CHANGELOG=CHANGELOG.md
 
 if [ ! -d "$TMP_DIR" ]; then
     mkdir $TMP_DIR
