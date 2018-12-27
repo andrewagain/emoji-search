@@ -9,17 +9,28 @@ stage('Imran') {
         script {
             
         echo 'hello world'
-            
-        def retryAttempt = 0
-            retry(2) {
-                sh './jenkinsinstall.sh'
-                 retryAttempt = retryAttempt + 1
-            }     
-            
-            if ( retryAttempt > 2)
-             sh 'chmod 777 ./jenkinsinstall.sh'
-             sh './jenkinsinstall.sh'
+        sh 'chmod 777 ./changelog.sh'
+        sh './changelog.sh master development'
+        env.WORKSPACE = pwd()
+
+        def version = readFile 'CHANGELOG.md'
+        sh 'ls'
+        //echo "${version}"
+        
+        sh 'git tag -a "${BUILD_NUMBER}" -m imran'
+
+withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
+     sh 'git push --tags'
+}
+      
+ 
+        
+        sh 'git cat-file -p ${BUILD_NUMBER}'
+        
+        
+        cleanWs()
     }
+    
     }
 }
     
