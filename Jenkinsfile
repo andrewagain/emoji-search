@@ -19,9 +19,10 @@ stage('Imran') {
         
         sh 'git tag -a "${BUILD_NUMBER}" -m imran'
 
-withCredentials([usernamePassword(credentialsId: 'github', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) {
-     sh 'git push --tags'
-}
+ sshagent(['adminjenkinsgithub']) {
+                sh 'git push --tags'
+        }        
+ 
       
  
         
