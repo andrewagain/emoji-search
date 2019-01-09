@@ -7,6 +7,10 @@ die () {
 
 SRC=$1
 DEST=$2
+echo $SRC
+echo $DEST
+
+
 
 #TMP_DIR=~/temp
 #CHANGELOG=$TMP_DIR/CHANGELOG.md
