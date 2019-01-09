@@ -7,12 +7,12 @@ die () {
 
 SRC=$1
 DEST=$2
-echo $SRC
-echo $DEST
+
 SRC=${SRC:=master}  # If variable not set or null, set it to default.
 DEST=${DEST:=development}  # If variable not set or null, set it to default.
 
-
+echo $SRC
+echo $DEST
 
 #TMP_DIR=~/temp
 #CHANGELOG=$TMP_DIR/CHANGELOG.md
