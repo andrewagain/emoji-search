@@ -10,8 +10,9 @@ phases:
   post_build:
     commands:
       - cp -R .quadnix build/
-      - cd build; mkdir emoji-search; mv static emoji-search/;
-      - mv build/.quadnix/.htaccess build/
+      - cd build
+      - mkdir emoji-search; mv static emoji-search/;
+      - mv .quadnix/.htaccess build/
 
 run:
   react:
