@@ -12,7 +12,7 @@ phases:
       - cp -R .quadnix build/
       - cd build
       - mkdir emoji-search; mv static emoji-search/;
-      - mv .quadnix/.htaccess build/
+      - mv .quadnix/.htaccess .
 
 run:
   react:
