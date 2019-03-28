@@ -11,7 +11,7 @@ class Header extends PureComponent {
           height="32"
           alt=""
         />
-        Emoji Search
+        Cams Website
         <img
           src="//cdn.jsdelivr.net/emojione/assets/png/1f63a.png"
           width="32"

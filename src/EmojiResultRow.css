@@ -5,10 +5,11 @@
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
+  background-color: orange;
 }
 
 .component-emoji-result-row:hover {
-  background-color: #eee;
+  background-color: pink;
 }
 
 .component-emoji-result-row img {
@@ -27,7 +28,7 @@
   position: relative;
   top: 8px;
   right: 10px;
-  color: #ccc;
+  color: purple;
   display: none;
 }
 
