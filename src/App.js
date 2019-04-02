@@ -1,7 +1,8 @@
 import React, { PureComponent } from "react";
 import Header from "./Header";
-import SearchInput from "./SearchInput";
-import EmojiResults from "./EmojiResults";
+import Image from "./Image";
+import Footer from "./Footer";
+import "./App.css";
 import filterEmoji from "./filterEmoji";
 
 class App extends PureComponent {
@@ -22,8 +23,10 @@ class App extends PureComponent {
     return (
       <div>
         <Header />
-        <SearchInput textChange={this.handleSearchChange} />
-        <EmojiResults emojiData={this.state.filteredEmoji} />
+        <Image />
+        <Footer />
+        {/*<SearchInput textChange={this.handleSearchChange} />
+        <EmojiResults emojiData={this.state.filteredEmoji} />*/}
       </div>
     );
   }

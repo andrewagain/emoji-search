@@ -4,21 +4,26 @@ import "./Header.css";
 class Header extends PureComponent {
   render() {
     return (
-      <header className="component-header">
-        <img
-          src="//cdn.jsdelivr.net/emojione/assets/png/1f638.png"
-          width="32"
-          height="32"
-          alt=""
-        />
-        Cams Website
-        <img
-          src="//cdn.jsdelivr.net/emojione/assets/png/1f63a.png"
-          width="32"
-          height="32"
-          alt=""
-        />
-      </header>
+        <nav className="navbarcam navbar navbar-default navbar-fixed-top">
+          <div className="container">
+            <div className="navbar-header">
+              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+                <span className="icon-bar"></span>
+              </button>
+              <a className="navbar-brand" href="#">Cam's Website</a>
+            </div>
+            <div id="navbar" className="collapse navbar-collapse">
+              <ul className="nav navbar-nav">
+                <li className="active"><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
     );
   }
 }

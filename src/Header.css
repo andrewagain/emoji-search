@@ -1,16 +1,3 @@
-.component-header {
-  padding: 15px;
-  position: relative;
-  font-weight: normal;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 32px;
-  text-align: center;
-  color: white;
-  background-color: blue;
-}
-
-.component-header img {
-  position: relative;
-  top: 6px;
-  padding: 0 14px;
+.navbarcam {
+    background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
 }

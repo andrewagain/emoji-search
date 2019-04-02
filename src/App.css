@@ -26,3 +26,7 @@
     transform: rotate(360deg);
   }
 }
+
+body > .container {
+  padding: 60px 15px 0;
+}

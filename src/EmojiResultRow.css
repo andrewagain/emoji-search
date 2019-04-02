@@ -5,11 +5,11 @@
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
-  background-color: orange;
+  background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
 }
 
 .component-emoji-result-row:hover {
-  background-color: pink;
+  background: linear-gradient(to right, #a90329 0%,#8f0222 44%,#6d0019 100%);
 }
 
 .component-emoji-result-row img {
@@ -28,7 +28,7 @@
   position: relative;
   top: 8px;
   right: 10px;
-  color: purple;
+  color: white;
   display: none;
 }
 

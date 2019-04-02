@@ -1,7 +1,6 @@
 .component-search-input {
   border-bottom: 1px solid #ccc;
-    background-color: blue;
-
+  background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
 }
 
 .component-search-input > div {
@@ -16,6 +15,5 @@
   font-size: 18px;
   padding: 10px 8px;
   width: 100%;
-  background-color: yellow;
-
+  background: linear-gradient(to right, #ffaf4b 0%,#ff920a 100%);
 }
