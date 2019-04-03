@@ -1,3 +1,11 @@
 .navbarcam {
     background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
 }
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
