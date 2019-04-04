@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import Header from "./Header";
 import Image from "./Image";
+import Gallery from "./Gallery";
 import Footer from "./Footer";
 import "./App.css";
 import filterEmoji from "./filterEmoji";
@@ -24,6 +25,7 @@ class App extends PureComponent {
       <div>
         <Header />
         <Image />
+        <Gallery />
         <Footer />
         {/*<SearchInput textChange={this.handleSearchChange} />
         <EmojiResults emojiData={this.state.filteredEmoji} />*/}

@@ -9,18 +9,17 @@
   background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
 }
 
-.images img {
+.card img {
   position: relative;
-  top: 6px;
-  padding: 0 14px;
   width: 400px;
   height: 300px;
 }
 
-.jumbotron.text-center {
-  background: linear-gradient(to right, #d6a700 0%,#e8aa00 23%,#e0b414 100%);
+.jumbotron {
+  margin-bottom: 20px;
 }
 
-.btn btn-primary {
-  background: linear-gradient(to right, #1e5799 0%,#207cca 27%,#207cca 27%,#207cca 32%,#207cca 41%,#2989d8 63%,#2989d8 63%,#2989d8 71%,#2989d8 71%,#7db9e8 100%);
+.card-text {
+  margin: 0px;
+  color: black;
 }
