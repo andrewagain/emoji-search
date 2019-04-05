@@ -6,7 +6,7 @@ class Footer extends PureComponent {
     return (
         <footer className="footer">
           <div className="container">
-            <p className="text-muted">Place sticky footer content here.</p>
+            <p className="text-muted">Cameron Shaw 2019</p>
           </div>
         </footer>
     );

@@ -12,24 +12,43 @@ import picture8 from './drawings/maninred.jpg'
 class Image extends PureComponent {
     render() {
         return (
-            <div class="album text-muted">
-		      <div class="container">
-		        <div class="row">
-		          <div class="card">
-		            <img src={picture8} alt="Man in Red" />
-		            <p class="card-text">Man in Red.</p>
-		          </div>
-		          <div class="card">
-		            <img src={picture1} alt="Amigo"/>
-		            <p class="card-text">Amigo.</p>
-		          </div>
-		          <div class="card">
-		            <img src={picture4} alt="Coffee"/>
-		            <p class="card-text">Coffee.</p>
-		          </div>
-		        </div>
-		      </div>
-		    </div>
+            <div class="container">
+			  <h2>Gallery</h2>
+
+			  <p>Click on the images to enlarge them.</p>
+			  <div class="row">
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			      	<a href={picture8} target="_blank">
+			          <img src={picture8} alt="Man In Red"/>
+			          <div class="caption">
+			            <p>Man In Red.</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			      	<a href={picture4} target="_blank">
+			          <img src={picture4} alt="Coffee"/>
+			          <div class="caption">
+			            <p>Coffee.</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			    <div class="col-md-4">
+			      <div class="thumbnail">
+			     	<a href={picture6} target="_blank">
+			          <img src={picture6} alt="Glen"/>
+			          <div class="caption">
+			            <p>Glen.</p>
+			          </div>
+			        </a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
         );
     }
 }
