@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Nav from "./Nav";
 import Header from "./Header";
-import Portfolio from "./Portfolio";
+import Gallery from "./Gallery";
 import About from "./About";
 import Contact from "./Contact"
 import Footer from "./Footer"
@@ -28,7 +28,7 @@ class App extends PureComponent {
       <div>
         <Nav />
         <Header />
-        <Portfolio />
+        <Gallery />
         <About />
         <Contact />
         <Footer />

@@ -1,54 +1,107 @@
 import React, {PureComponent} from "react";
+import "./Gallery.css"
+import amigo from './drawings/amigo.jpg'
+import burger from './drawings/burger.jpg'
+import cat from './drawings/cat.jpg'
+import coffee from './drawings/coffee.jpg'
+import ginger from './drawings/ginger.jpg'
+import glen from './drawings/glen.jpg'
+import hornet from './drawings/hornet.jpg'
+import maninred from './drawings/maninred.jpg'
 
-import picture2 from './drawings/burger.jpg'
-import picture3 from './drawings/cat.jpg'
-import picture4 from './drawings/coffee.jpg'
-import picture5 from './drawings/ginger.jpg'
-import picture6 from './drawings/glen.jpg'
-import picture7 from './drawings/hornet.jpg'
-import picture8 from './drawings/maninred.jpg'
-
-class Image extends PureComponent {
+class Gallery extends PureComponent {
     render() {
         return (
-            <div class="container">
-			  <h2>Gallery</h2>
+            <section class="portfolio" id="gallery">
+                <div class="container">
+                    <h2 class="text-center text-uppercase text-secondary mb-0">Gallery</h2>
+                    <hr class="star-dark mb-5"/>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={amigo} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={burger} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={cat} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={coffee} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={ginger} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={glen} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={hornet} alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+                                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                            <i class="fas fa-search-plus fa-3x"></i>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src={maninred} alt=""/>
+                                </a>
+                            </div>
+                        </div>
+                </div>
 
-			  <p>Click on the images to enlarge them.</p>
-			  <div class="row">
-			    <div class="col-md-4">
-			      <div class="thumbnail">
-			      	<a href={picture8} target="_blank">
-			          <img src={picture8} alt="Man In Red"/>
-			          <div class="caption">
-			            <p>Man In Red.</p>
-			          </div>
-			        </a>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="thumbnail">
-			      	<a href={picture4} target="_blank">
-			          <img src={picture4} alt="Coffee"/>
-			          <div class="caption">
-			            <p>Coffee.</p>
-			          </div>
-			        </a>
-			      </div>
-			    </div>
-			    <div class="col-md-4">
-			      <div class="thumbnail">
-			     	<a href={picture6} target="_blank">
-			          <img src={picture6} alt="Glen"/>
-			          <div class="caption">
-			            <p>Glen.</p>
-			          </div>
-			        </a>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+            </section>
         );
     }
 }
-export default Image;
+export default Gallery;

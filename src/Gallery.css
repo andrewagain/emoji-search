@@ -1,0 +1,8 @@
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: #0c5460;
+    color: white;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 0.9;
+}
