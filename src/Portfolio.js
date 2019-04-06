@@ -13,7 +13,7 @@ class Portfolio extends PureComponent {
         return (
             <section class="portfolio" id="portfolio">
                 <div class="container">
-                    <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                    <h2 class="text-center text-uppercase text-secondary mb-0">Gallery</h2>
                     <hr class="star-dark mb-5"/>
                         <div class="row">
                             <div class="col-md-6 col-lg-4">

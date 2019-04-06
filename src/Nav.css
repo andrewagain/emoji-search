@@ -1,3 +1,9 @@
+.logo {
+    max-width: 10%;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
 .bg-primary {
     background-color: #0c5460!important;
 }
@@ -21,4 +27,15 @@
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:hover, #mainNav .navbar-nav li.nav-item a.nav-link:focus{
     background-color: #0c5460;
     color: white;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    background-color: #0c5460;
+    color: white;
+}
+
+button.bg-primary:hover {
+    background-color: white!important;
+    border-color: black;
+    color: #0c5460!important;
 }
