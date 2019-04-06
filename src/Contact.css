@@ -1,0 +1,10 @@
+.btn-primary, .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #0c5460;
+    border-color: #0c5460;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: white;
+    border-color: black;
+    color: #0c5460;
+}

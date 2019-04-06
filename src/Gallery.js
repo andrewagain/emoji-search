@@ -1,6 +1,5 @@
 import React, {PureComponent} from "react";
-import "./Gallery.css";
-import picture1 from './drawings/amigo.jpg'
+
 import picture2 from './drawings/burger.jpg'
 import picture3 from './drawings/cat.jpg'
 import picture4 from './drawings/coffee.jpg'

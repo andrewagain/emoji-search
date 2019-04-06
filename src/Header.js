@@ -1,29 +1,18 @@
 import React, { PureComponent } from "react";
-import "./Header.css";
+import maninred from './drawings/maninred.jpg'
+import "./Header.css"
 
 class Header extends PureComponent {
   render() {
     return (
-        <nav className="navbarcam navbar navbar-default navbar-fixed-top">
-          <div className="container">
-            <div className="navbar-header">
-              <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span className="sr-only">Toggle navigation</span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-              <a className="navbar-brand" href="#">Cam's Website</a>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container">
+                <img class="img-fluid mb-5 d-block mx-auto circle" src={maninred} alt="" />
+                    <h1 class="text-uppercase mb-0">Cameron Shaw</h1>
+                    <hr class="star-light" />
+                    <h2 class="font-weight-light mb-0">Drawings</h2>
             </div>
-            <div id="navbar" className="collapse navbar-collapse">
-              <ul className="nav navbar-nav">
-                <li className="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        </header>
     );
   }
 }

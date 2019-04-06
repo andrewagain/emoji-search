@@ -1,0 +1,24 @@
+.bg-primary {
+    background-color: #0c5460!important;
+}
+
+.bg-secondary {
+    background-color: white!important;
+}
+
+#mainNav .navbar-brand {
+    color: black;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: black;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link.active, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:active, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
+    background-color: #0c5460;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:hover, #mainNav .navbar-nav li.nav-item a.nav-link:focus{
+    background-color: #0c5460;
+    color: white;
+}
