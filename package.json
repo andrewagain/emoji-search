@@ -12,12 +12,13 @@
     "clipboard": "^1.7.1",
     "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-testing-library": "^6.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   }
