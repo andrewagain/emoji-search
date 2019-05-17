@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import "./Header.css";
 
-class Header extends PureComponent {
+export default class Header extends PureComponent {
   render() {
     return (
       <header className="component-header">
@@ -22,4 +22,3 @@ class Header extends PureComponent {
     );
   }
 }
-export default Header;

@@ -5,7 +5,11 @@ import Clipboard from "clipboard";
 import EmojiResultRow from "./EmojiResultRow";
 import "./EmojiResults.css";
 
-class EmojiResults extends PureComponent {
+export default class EmojiResults extends PureComponent {
+  static propTypes = {
+    emojiData: PropTypes.array
+  };
+
   componentDidMount() {
     this.clipboard = new Clipboard(".copy-to-clipboard");
   }
@@ -28,7 +32,3 @@ class EmojiResults extends PureComponent {
     );
   }
 }
-EmojiResults.propTypes = {
-  emojiData: PropTypes.array
-};
-export default EmojiResults;
