@@ -16,18 +16,21 @@ describe('App component', () => {
   })
 
   describe('should has one', () => {
+    let wrapper
+
+    beforeEach(() => {
+      wrapper = shallow(<App />)
+    })
+
     it('Header component', () => {
-      const wrapper = shallow(<App />)
       expect(wrapper.find(Header)).toHaveLength(1)
     })
 
     it('SearchInput component', () => {
-      const wrapper = shallow(<App />)
       expect(wrapper.find(SearchInput)).toHaveLength(1)
     })
 
     it('EmojiResults component', () => {
-      const wrapper = shallow(<App />)
       expect(wrapper.find(EmojiResults)).toHaveLength(1)
     })
   })
