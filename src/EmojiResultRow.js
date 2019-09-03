@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import "./EmojiResultRow.css";
 
-export default class EmojiResultsRow extends PureComponent {
+export default class EmojiResultRow extends PureComponent {
   static propTypes = {
     title: PropTypes.string,
     symbol: PropTypes.string
