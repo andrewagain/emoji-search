@@ -9,6 +9,9 @@ export default function filterEmoji(searchText, maxResults) {
       if (emoji.keywords.includes(searchText)) {
         return true;
       }
+      if (emoji.symbol === searchText) {
+        return true;
+      }
       return false;
     })
     .slice(0, maxResults);
