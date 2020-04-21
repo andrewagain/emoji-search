@@ -4,6 +4,11 @@
   "license": "MIT",
   "homepage": "http://ahfarmer.github.io/emoji-search",
   "devDependencies": {
+    "@fab/cli": "^0.0.7-alpha.31",
+    "@fab/input-static": "^0.0.7-alpha.31",
+    "@fab/rewire-assets": "^0.0.7-alpha.31",
+    "@fab/serve-html": "^0.0.7-alpha.31",
+    "@fab/server": "^0.0.7-alpha.31",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1",
     "react-scripts": "^3.0.1"
@@ -19,7 +24,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build:fab": "npm run build && npm run fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip"
   },
   "browserslist": {
     "production": [
