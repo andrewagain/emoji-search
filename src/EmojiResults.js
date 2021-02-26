@@ -2,13 +2,9 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Clipboard from "clipboard";
 import { NotificationContainer, NotificationManager } from "react-notifications";
-
 import EmojiResultRow from "./EmojiResultRow";
 import "./EmojiResults.css";
-
 import "react-notifications/lib/notifications.css";
-
-// import "react-toastify/dist/ReactToastify.css";
 
 export default class EmojiResults extends PureComponent {
   static propTypes = {
