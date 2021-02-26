@@ -5,10 +5,10 @@ import "./SearchInput.css";
 
 export default class SearchInput extends PureComponent {
   static propTypes = {
-    textChange: PropTypes.func
+    textChange: PropTypes.func,
   };
 
-  handleChange = event => {
+  handleChange = (event) => {
     this.props.textChange(event);
   };
 
@@ -16,7 +16,7 @@ export default class SearchInput extends PureComponent {
     return (
       <div className="component-search-input">
         <div>
-          <input onChange={this.handleChange} />
+          <input placeholder="Search here 😀" autoFocus onChange={this.handleChange} />
         </div>
       </div>
     );
