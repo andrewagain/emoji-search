@@ -13,3 +13,33 @@ body .github-fork-ribbon:before {
     display: none;
   }
 }
+
+.component-emoji-result-row > img.placeholder {
+  transition: transform 0.3s ease-out;
+  left: 9.5px;
+  top: 9.5px;
+  position: absolute;
+}
+
+.component-emoji-result-row > img.placeholder {
+  animation: fadeOut 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.notification-success {
+  background-color: #4abb4f;
+}
+.notification {
+  font-weight: bold;
+  border-radius: 100px;
+}
