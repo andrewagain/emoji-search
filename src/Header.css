@@ -1,11 +1,14 @@
 .component-header {
   padding: 15px;
   position: relative;
+  padding-left: auto;
+  padding-right: auto;
   font-weight: normal;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 32px;
   text-align: center;
   color: #333;
+  margin-top:-20px;
 }
 
 .component-header img {

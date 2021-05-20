@@ -1,9 +1,9 @@
 {
-  "short_name": "Emoji Search",
+  "short_name": "Halloween Emoji Search",
   "name": "Emoji Search Example App",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://www.chalkface.pro/cdn/react/jackolantern-01.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
