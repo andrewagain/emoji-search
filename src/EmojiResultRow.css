@@ -5,6 +5,9 @@
   position: relative;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   cursor: pointer;
+  background-color: #ffffff;
+  margin-left:120px;
+  margin-right:120px;
 }
 
 .component-emoji-result-row:hover {
@@ -27,7 +30,7 @@
   position: relative;
   top: 8px;
   right: 10px;
-  color: #ccc;
+  color: #c65d3d;
   display: none;
 }
 
