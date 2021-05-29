@@ -4,7 +4,7 @@
   "license": "MIT",
   "homepage": "http://ahfarmer.github.io/emoji-search",
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^3.2.0",
     "prettier": "^1.17.1",
     "react-scripts": "^3.0.1"
   },
