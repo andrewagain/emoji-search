@@ -1,0 +1,23 @@
+name: Auto message for PR's and Issues
+description: Automatically send hello message to the first PR and Issue for new contributor.
+branding:
+  icon: message-square
+  color: yellow
+on: [pull_request]
+jobs:
+  build:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Set-up Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "14.x"
+    - run: yarn
+    - run: yarn test
+      name: Hello new contributor
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/first-interaction@v1
+          with:
+            repo-token: ${{ secrets.REPO_TOKEN }}
+            pr-message: "Hey, thank you for opening your Pull Request !"
