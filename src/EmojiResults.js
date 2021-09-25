@@ -21,13 +21,13 @@ export default class EmojiResults extends PureComponent {
   render() {
     return (
       <div className="component-emoji-results">
-        {this.props.emojiData.map(emojiData => (
+        {this.props.emojiData.length !== 0 ? this.props.emojiData.map(emojiData => (
           <EmojiResultRow
             key={emojiData.title}
             symbol={emojiData.symbol}
             title={emojiData.title}
           />
-        ))}
+        )) : <div className='ErrorMsg'>{"Oops! No Result Found"}</div>}
       </div>
     );
   }
