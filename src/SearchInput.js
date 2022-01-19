@@ -1,24 +1,20 @@
-import React, { PureComponent } from "react";
-import PropTypes from "prop-types";
+import React, { memo } from "react";
 
 import "./SearchInput.css";
 
-export default class SearchInput extends PureComponent {
-  static propTypes = {
-    textChange: PropTypes.func
+function SearchInput ({textChange = f => f}){
+
+  const handleChange = event => {
+    textChange(event);
   };
 
-  handleChange = event => {
-    this.props.textChange(event);
-  };
-
-  render() {
-    return (
-      <div className="component-search-input">
-        <div>
-          <input onChange={this.handleChange} />
-        </div>
+  return (
+    <div className="component-search-input">
+      <div>
+        <input onChange={handleChange} />
       </div>
-    );
-  }
+    </div>
+  );
 }
+
+export default memo(SearchInput);
