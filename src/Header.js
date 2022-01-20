@@ -10,6 +10,7 @@ export default class Header extends PureComponent {
           width="32"
           height="32"
           alt=""
+          className="grin-cat"
         />
         Emoji Search
         <img
@@ -17,6 +18,7 @@ export default class Header extends PureComponent {
           width="32"
           height="32"
           alt=""
+          className="smile-cat"
         />
       </header>
     );
