@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "../App";
+import App from "./App";
 
 describe('The app loads with 20 emojis', () => {
   it("renders without crashing", () => {
