@@ -59,3 +59,4 @@ jobs:
       with:
         NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
         NETLIFY_DEPLOY_TO_PROD: true
+        
