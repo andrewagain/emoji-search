@@ -48,14 +48,14 @@ jobs:
         name: production-files
         path: ./build
 
-    - name: Deploy artifact
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
-
     # - name: Deploy artifact
-    #   uses: jsmrcaga/action-netlify-deploy@v1.1.0
+    #   uses: peaceiris/actions-gh-pages@v3
     #   with:
-    #     NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
-    #     NETLIFY_DEPLOY_TO_PROD: true
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: ./build
+
+    - name: Deploy artifact
+      uses: jsmrcaga/action-netlify-deploy@v1.1.0
+      with:
+        NETLIFY_AUTH_TOKEN: ${{ secrets.MY_TOKEN_SECRET }}
+        NETLIFY_DEPLOY_TO_PROD: true
